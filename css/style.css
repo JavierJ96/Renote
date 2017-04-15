@@ -18,9 +18,12 @@ html, body{
    font-size:16px;
    line-height: 19px;
    font-weight: 400;
-   color:#3a3a3a;
+   color:#4a4a4a;
+   letter-spacing: 0.5px;
  }
-
+a{
+  letter-spacing: 1px;
+}
  /* GRID */
  .container{
   margin-right: auto;
@@ -41,12 +44,48 @@ html, body{
  }
 
  .one-half, .one-third{
-  width:96%;
+   width:96%;
    float:left;
    position:relative;
    min-height: 1px;
-   margin:0 2% 2px;
+   margin:0 2% 20px;
  }
+
+ .one-half{
+  clear:both;
+ }
+
+@media (min-width: 768px) {
+   .container {
+     width: 750px;
+   }
+ }
+ @media (min-width: 992px) {
+   .container {
+     width: 970px;
+   }
+   .one-half {
+     width:98%;
+   }
+   .one-third {
+     width:29%;
+   }
+ }
+ @media (min-width: 1200px) {
+   .container {
+     width: 1170px;
+   }
+ }
+
+
+
+
+
+
+
+
+
+
 
  .animated.fadeIn{
   -webkit-animation-duration: 3s;
@@ -136,6 +175,153 @@ header div a.btn-solid{
   line-height: 40px;
   margin-top: 5px;
 }
+
+
+
+
+
+
+/* FEATURES */
+
+.Features{
+  padding-right: 80px;
+  padding-left: 80px;
+  
+}
+
+[role=main] h1{
+  text-align: center;
+  padding-top: 30px;
+}
+
+.Features li{
+  list-style-type: none;
+  display: inline-block;
+}
+
+.note-org-title{
+  position: relative;
+  top: 175px;
+  font-weight: 500;
+
+}
+
+.note-org-para{
+position: relative;
+display: inline-block;
+padding-top: 165px;
+font-weight: 300;
+}
+
+.notes-organize{
+  position: relative;
+  display: inline-block;
+  top: -25px;
+  float: right;
+  right: 100px;
+  height: 350px;
+}
+
+.image-title{
+  position: relative;
+  display: inline-block;
+  float:right;
+  right: 350px;
+  top: 125px;
+  font-weight: 500;
+
+}
+
+.image-para{
+position: relative;
+display: inline-block;
+float: right;
+padding-top: 175px;
+font-weight: 300;
+}
+
+.images{
+  position: relative;
+  display: inline-block;
+  top: 15px;
+  float: left;
+  height: 350px;
+}
+.Features i{
+font-family: FontAwesome;
+}
+
+
+
+
+
+
+
+/*   PRICING   */
+
+.pricing{
+  text-align: center;
+}
+
+.pricing ul.container{
+  position: relative;
+  display: inline-block;
+  float:left;
+  padding-left: 0px;
+}
+
+.one-third{
+  position:relative;
+  display: inline;
+}
+
+
+.pricing li{
+  list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
