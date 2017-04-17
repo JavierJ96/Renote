@@ -15,6 +15,9 @@ body {
 -->
 </style>
 
+<!--Bootstrap-->
+<link rel="stylesheet" href="css/bootstrap.css">
+
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
 rel="stylesheet">
@@ -25,7 +28,9 @@ rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/animate.css"
+
 </head>
+
 <body>
 
 
@@ -46,88 +51,111 @@ rel="stylesheet">
         <p>Renote lets you collect and share information.<br>Simply create notes, store images and add links.</p>
         <a href="signup.html" class="btn-solid">Free Trial</a>
     </div>
-    <img src="images/site-hero.png" class="hero" alt="Renote" height="335"/>
+    <div class="hero2" class="img-responsiveness">
+    <img src="images/site-hero.png" class="hero" alt="Renote"/>
+    </div>
 </header>
 
 
 <main role="main">
 <!-- Features -->
-<h1>FEATURES</h1>
+<section class="Features"><h1>FEATURES</h1>
+<div class="container.fluid">
+  <div class="row">
+    <div class="col-lg-6">
+      <li>
+        <h2 class="note-org-title">Notes</h2>
+        <p class="note-org-para">Using markdown, you can create simple text<br>based documents to save,
+        share or even bookmark for future usage.</p>
+    </div>
+          <img src="images/site-notes.png" class="notes-organize" alt="Create notes"/>
+      </li>
+  </div>
 
-<section class="Features">
-  <ul class="container">
-  <li>
-      <h2 class="note-org-title">Notes</h2>
-      <p class="note-org-para">Using markdown, you can create simple text<br>based documents to save,
-      share or even<br>bookmark for future usage.</p>
-      <img src="images/site-notes.png" class="notes-organize" alt="Create notes"/>
-    </li>
+  <div class="row">
+    <div class="col-lg-6 col-lg-push-6">
+      <li>
+        <h2 class="image-title">Images</h2>
+        <p class="image-para">Any images that you find interesting? Well you can now have a way to organize and store those photos in a safe location.</p>
+    </div>
+          <div class="col-lg-6 col-lg-pull-6">
+          <img src="images/site-images.png" class="images" alt="Save Images"/>
+          </div>
 
-  <li>
-      <h2 class="image-title">Images</h2>
-      <p class="image-para">Any images that you find interesting? Well<br>you can now have a way to organize and<br>store those photos in a safe location.</p>
-      <img src="images/site-images.png" class="images" alt="Save Images"/>
-    </li>
-  <li>
-      <h2 class="note-org-title">Organize</h2>
-      <p class="note-org-para">Organization is key to anything. Be able to<br>organize notes, images, or links by filing them<br>into a specific catalog for future easy access.</p>
-      <img src="images/site-organize.png" class="notes-organize" alt="Organization"/>
-    </li>
-  </ul>
+      </li>
+  </div>
+
+  <div class="row">
+  <div class="col-lg-6">
+      <li>
+        <h2 class="note-org-title">Organize</h2>
+        <p class="note-org-para">Organization is key to anything. Be able to organize notes, images, or links by filing them into a specific catalog for future easy access.</p>
+    </div>   
+          <img src="images/site-organize.png" class="notes-organize" alt="Organization"/>     
+      </li>
+  </div>
+
+</div>    
 </section>
 
 <!-- Pricing -->
 <section class="pricing">
+
 <div class="p-white">
-<H1>PRICING</H1> 
-  <ul class="container"> 
-  <li class="one-third">
-    <ul>
-    <h2>Casual</h2>
-    <h5>Free</h5>
-      <a href="signup.html" class="btn-solid">Free Trial</a>
-        <li>Up to 10 catalogs</li>
-        <li>Up to 5 collaborators</li>
-        <li><strong>2GB</strong> of storage</li>
-      </ul>
-  </li>
 
-  <li class="one-third">
-  <div class="one-third">
-    <ul>
-      <h2>Professional</h2>
-      <h5><span>$</span>5.99<span class="month">/month</span></h5>
+  <H1>PRICING</H1> 
+  <div class="container.fluid">
+  <div class="p-white">
+  <div class="row">
+    <div class="col-lg-4">
+    <li>
+     <h2>Casual</h2>
+      <h5>Free</h5>
         <a href="signup.html" class="btn-solid">Free Trial</a>
-          <li>Unlimited catalogs</li>
-          <li>Up to 15 collaborators</li>
-          <li><strong>10GB</strong> of storage</li>
-          <li>Real-time collaboration</li>
-        </ul>
-  </div>
-  </li>
+          <li>Up to 10 catalogs</li>
+          <li>Up to 5 collaborators</li>
+          <li><strong>2GB</strong> of storage</li>
+    </li>
+    </div>
 
-  <li class="one-third">
-    <ul>
-      <h2>Expert</h2>
-      <h5><span>$</span>8.99<span class="month">/month</span></h5>
-          <a href="signup.html" class="btn-solid">Free Trial</a>
-        <li>Unlimited boxes</li>
-        <li>Up to 30 collaborators</li>
-        <li><strong>Unlimited</strong> storage</li>
-        </ul>
-  </li>
-</ul>
+    <div class="col-lg-4"> 
+    <li>
+      <h2>Professional</h2>
+        <h5><span>$</span>5.99<span class="month">/month</span></h5>
+         <a href="signup.html" class="btn-solid">Free Trial</a>
+           <li>Unlimited catalogs</li>
+           <li>Up to 15 collaborators</li>
+           <li><strong>10GB</strong> of storage</li>
+           <li>Real-time collaboration</li>
+    </li>
+    </div>
+
+    <div class="col-lg-4">
+     <li>
+        <h2>Expert</h2>
+          <h5><span>$</span>8.99<span class="month">/month</span></h5>
+            <a href="signup.html" class="btn-solid">Free Trial</a>
+              <li>Unlimited boxes</li>
+              <li>Up to 30 collaborators</li>
+              <li><strong>Unlimited</strong> storage</li>
+     </li>
+     </div>
+
+    </div>
+    </div>
+
 </div>
+
 </section>
 </main>
 
 
 <!--Reinforce-->
 <section class="reinforce">
-    <h2>Try Renote Today</h2>
+    <h2>GET STARTED TODAY</h2>
     <p>Start your free trial today. You can try Renote for 30 days, for free. <br>No credit card information required to begin </p>
   <div>
-    <a href="signup.html class="btn-solid">Free Trial</a>
+    <a href="signup.html class="btn-solid">Sign Up</a>
   </div>
 </section>
 
