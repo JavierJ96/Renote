@@ -27,7 +27,7 @@ rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/animate.css"
+    <link rel="stylesheet" href="css/animate.css">
 
 </head>
 
@@ -36,30 +36,38 @@ rel="stylesheet">
 
 <!-- Hero -->
 <header>
-  <nav class="container">
-    <div class="one-half">
+
+  <nav class="navbar navbar-light bg-faded">
+   
+     
       <a href="index.html" class="site-logo"><img src="images/site-logo.png"
       alt="Renote" height="60" /></a>
-      <ul>
-        <li class="btn-solid"><a href="signin.html">Sign In</a></li>
-        <li class="btn-solid"><a href="signup.html">Sign Up</a></li>
-      </ul>
-    </div>
-  </nav>
+      <li class="btn-solid"><a href="signup.html">Sign Up</a></li>
+
+        <li><a href="signin.html">Sign In</a></li>
+
+
+</nav>
+
     <div class="white">
         <h1 class="animated fadeIn">SAVE, SHARE AND COLLABORATE.</h1>
         <p>Renote lets you collect and share information.<br>Simply create notes, store images and add links.</p>
         <a href="signup.html" class="btn-solid">Free Trial</a>
     </div>
-    <div class="hero2" class="img-responsiveness">
-    <img src="images/site-hero.png" class="hero" alt="Renote"/>
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-lg-12">
+    <img src="images/site-hero.png" class="hero" class="img-fluid" alt="Renote"/>
+    </div>
+    </div>
     </div>
 </header>
 
 
 <main role="main">
 <!-- Features -->
-<section class="Features"><h1>FEATURES</h1>
+<section class="Features">
+<h1>FEATURES</h1>
 <div class="container.fluid">
   <div class="row">
     <div class="col-lg-6">
@@ -68,7 +76,9 @@ rel="stylesheet">
         <p class="note-org-para">Using markdown, you can create simple text<br>based documents to save,
         share or even bookmark for future usage.</p>
     </div>
-          <img src="images/site-notes.png" class="notes-organize" alt="Create notes"/>
+          <div class="col-lg-6">
+          <img src="images/site-notes.png" class="img-fluid" alt="Create notes"/>
+          </div>
       </li>
   </div>
 
@@ -79,7 +89,7 @@ rel="stylesheet">
         <p class="image-para">Any images that you find interesting? Well you can now have a way to organize and store those photos in a safe location.</p>
     </div>
           <div class="col-lg-6 col-lg-pull-6">
-          <img src="images/site-images.png" class="images" alt="Save Images"/>
+          <img src="images/site-images.png" class="img-fluid" alt="Save Images"/>
           </div>
 
       </li>
@@ -91,7 +101,9 @@ rel="stylesheet">
         <h2 class="note-org-title">Organize</h2>
         <p class="note-org-para">Organization is key to anything. Be able to organize notes, images, or links by filing them into a specific catalog for future easy access.</p>
     </div>   
-          <img src="images/site-organize.png" class="notes-organize" alt="Organization"/>     
+          <div class="col-lg-6">
+          <img src="images/site-organize.png" class="img-fluid" alt="Organization"/> 
+          </div>   
       </li>
   </div>
 
@@ -161,22 +173,32 @@ rel="stylesheet">
 
 
 <!-- Footer -->
-<footer>
-<ul>
-<li
-</ul>
-    <p class="copyright-block">&copy; 2017. <strong>Renote</strong> - All Rights
-    Reserved.</p>
-  <nav class="link-block middle-footer-block one-third">
-    <ul>
+<footer class="navbar-bottom">
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2">
+          <div class="centerBlock">
       <li><a href="">Terms</a></li>
       <li><a href="">Privacy Policy</a></li>
       <li><a href="">Contact Us</a></li>
       <li><a href="">About Us</a></li>
-    </ul>
-  </nav>
-    <img class="logo" src="images/Site-logo-color.png" alt="Renote" />
-
+          </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="centerBlock">
+          <div class="copy">
+    <p class="copyright-block">&copy; 2017. <strong>Renote</strong> - All Rights
+    Reserved.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="centerBlock">
+    <img src="images/Site-logo-color.png" class="logo-color" alt="Renote"/>
+        </div>
+      </div>
+    </div>
+</div>
 </footer>
 </body>
 </html>
