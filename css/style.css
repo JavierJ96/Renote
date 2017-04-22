@@ -261,7 +261,7 @@ font-family: FontAwesome;
 }
 
 .middle-box{
-  out
+
 }
 
 
@@ -344,27 +344,27 @@ footer .col-lg-2{
 
 
 /*NAV*/
-.left-nav {
+.left-nav .container{
+    position: absolute;
    height: 100vh;
-   width:210px;
+   width:220px;
    color:#FFFFFF;
    background: #34495E;
    background-image: linear-gradient(-280deg, #5697D7 0%, #795BCB 100%);
    float:left;
    position: fixed;
    display:block;
-   clear: both;
+   clear: right;
    overflow-y: auto;
  }
 
 
 .left-nav {
     height: 100%;
-    width:210px;
+    width:220px;
     position:absolute;
     color:#FFFFFF;
    background-image: linear-gradient(-280deg, #5697D7 0%, #795BCB 100%);
-   float:left;
    -webkit-transition: all 0.3s ease-in-out;
    -moz-transition: all 0.3s ease-in-out;
    -o-transition: all 0.3s ease-in-out;
@@ -377,7 +377,7 @@ footer .col-lg-2{
 
 .left-nav.open {
    display:block;
-   width:210px;
+   width:220px;
    -webkit-transition: all 0.4s ease-in-out;
    -moz-transition: all 0.3s ease-in-out;
    -o-transition: all 0.3s ease-in-out;
@@ -494,14 +494,14 @@ hr{
 .left-nav div.btn-solid{
     background: #4CDBD2;
     position: absolute;
-    display: block;
-    width: 100%;
-    height: 6%;
+    display:block;
+    width: 220px;
+    height: 42px;
     text-align: center;
-    bottom: 0;
     line-height: 3;
     font-weight: 600;
     font-size: 15px;
+    bottom: 0;
 }
 
 
@@ -514,7 +514,7 @@ hr{
 }
   /* CONTENT */
  .content {
-   padding:6em 1% 1.5em;
+   padding:6em 2% 1.5em;
    float:right;
    width:98%;
    position: relative;
@@ -526,6 +526,7 @@ hr{
 .content .row{
     padding-left: 2%;
     padding-right: 2%;
+    clear: both;
 }
 
  .content .header h1 {
@@ -629,7 +630,7 @@ hr{
 /* Larger Mobile Devices */
  @media (min-width:460px) {
    .content {
-     padding:1.5em 1%;
+     padding:1.5em 0%;
      float:right;
      width:90%;
      position: relative;
@@ -668,9 +669,10 @@ hr{
    }
  }
 /* Laptops and Desktops */
- @media (min-width:992px) {
+ @media (min-width:1180px) {
    .content {
      padding:1.5em 1%;
+    padding-left: 2%;
      float:right;
      width:83.33333333%;
      position: relative;
