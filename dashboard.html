@@ -28,22 +28,45 @@ rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/dropit.css">
 
 </head>
 <body class="Dashboard">
+    
+ <!-- RESPONSIVE NAV -->
+   <a class="hamburger" id="menu" href="#">&#9776;</a>
+    
 <!--     NAVIGATION     -->
 <nav id="left-nav" class="left-nav">
+    <div class="logo">
      <a href="#" class="site-logo"><img src="images/site-logo.png" height="35" /></a>
+    </div>    
     <br>
+    
     <a href="#" class="set"><i class="fa fa-cog"></i>Settings</a>
-         <div class="settings">
+    <div class="settings">
      <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg">
-             <br>
-     <p>Joey Kirk</p>
-             <hr>
-         </div>
+    <br>
+        
+    <p>Ronald M.</p>
+    <hr>
+        
+    </div>
     <div class="left-add-button">
-    <a href="#"><i class="fa fa-plus"></i> Add Content</a>
+        
+       <ul class="menu">
+            <li>
+               <a href="#"><i class="fa fa-plus"></i> Add Content</a>
+              <ul>
+                  <li><a href="#"><i class="fa fa-sticky-note-o"></i> Note</a></li>
+                  <hr class="dropit-break">
+                  <li><a href="#"><i class="fa fa-image"></i> Image</a></li>
+                  <hr class="dropit-break">
+                  <li><a href="#"><i class="fa fa-link"></i> Link</a></li>
+              </ul>
+            </li>
+        </ul>
+    
     </div>
         <hr>
          
@@ -70,10 +93,23 @@ rel="stylesheet">
 <main role="main">  
 <section class="content">
      <div class="container">
+         <div class="row">
        <div class="header">
          <h1>DASHBOARD</h1>
-         <a href="#" class="btn-solid">+ Add Content</a>
+        <ul class="menu">
+            <li>
+              <a href="#" class="btn-solid">+ Add Content</a>
+              <ul>
+                  <li><a href="#"><i class="fa fa-sticky-note-o"></i> Note</a></li>
+                  <hr class="dropit-break">
+                  <li><a href="#"><i class="fa fa-image"></i> Image</a></li>
+                  <hr class="dropit-break">
+                  <li><a href="#"><i class="fa fa-link"></i> Link</a></li>
+              </ul>
+            </li>
+          </ul>
        </div>
+        </div>
      </div>
     
      <div class="container.fluid">
@@ -143,10 +179,35 @@ rel="stylesheet">
          </div>
        </div>
          
+         <div class="content-item">
+         <div class="item-box">
+             <img src="http://i2.wp.com/www.shainblumphoto.com/wp-content/uploads/2015/11/shainblum20140920IMG_6754-Edit-copy-2.jpg?zoom=2&resize=835%2C557"/>
+         </div>
+       </div>
+         
+         <div class="content-item">
+         <div class="item-box">
+             <h2><a href="#">Learning</a></h2>
+             <p>"Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do."</p>
+         </div>
+       </div>
+         
+         <div class="content-item">
+         <div class="item-box">
+             <img src="http://www.shainblumphoto.com/wp-content/uploads/2016/07/lajollabirdseye_1200.jpg"/>
+         </div>
+       </div>
+         
      </div>
    </section>
- </main>    
-    
-    
+ </main>   
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/dropit.js"></script>
+<script type="text/javascript">
+     $(".menu").dropit();
+     $( "#menu" ).click(function() {
+     $("#left-nav").toggleClass("open", 200);
+     });
+   </script>
  </body>
  </html>
