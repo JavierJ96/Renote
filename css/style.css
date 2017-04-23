@@ -112,12 +112,10 @@ margin-top: 0;
 }
     
 header .img-fluid{
-    padding-top: 30px;
+  padding-top: 35px;
   max-width: 100%;
   height: auto;
-    display: block;
-    
-    
+  display: block;
 }
 
 header .col-lg-12 img{
